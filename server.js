@@ -24,9 +24,11 @@ const port = 9000;
 dotenv.config();
 
 //
-app.use(cors());
 app.use(express.json());
+app.use(cors());
 app.use(morgan("common"));
+
+app.use('/static', express.static('static'))
 
 
 //LOG--- CONNECT MONGOO DB

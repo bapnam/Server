@@ -8,5 +8,8 @@ router.post("/add", sanPhamController.addSanPham);
 // UPDATE
 router.put("/update/:id", sanPhamController.updateSanPham);
 
+// GET ALL
+router.get("/getall", sanPhamController.getAllSanPham);
+
 //LOG---
 module.exports = router;

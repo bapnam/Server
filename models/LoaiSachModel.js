@@ -6,6 +6,7 @@ const LoaiSachSchema = new mongoose.Schema(
     TenLoaiSach: {
       type: String,
       required: true,
+      unique: true,
     },
   },
   { timestamps: true }

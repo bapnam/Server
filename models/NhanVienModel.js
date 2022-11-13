@@ -5,6 +5,8 @@ const NhanVienSchema = new mongoose.Schema(
   {
     MaSoNV: {
       type: String,
+      required: true,
+      unique: true,
     },
     HoTen: {
       type: String,
@@ -12,19 +14,19 @@ const NhanVienSchema = new mongoose.Schema(
     },
     NgaySinh: {
       type: String,
+      required: true,
     },
     SDT: {
       type: String,
       required: true,
-      unique: true,
-      length: 10,
-    },
+      unique: true,    },
     DiaChi: [
       {
-        TenDiaChi: { type: String, default: "Dia Chi 1" },
-        TinhTP: { type: String, required: true },
-        QuanHuyen: { type: String, required: true },
-        XaPhuong: { type: String, required: true },
+        TenDiaChi: { type: String, default: "Địa Chỉ 1" },
+        TinhTP: { type: String},
+        QuanHuyen: { type: String},
+        XaPhuong: { type: String},
+        ChiTiet: {type: String}
       },
     ],
     GioiTinh: {
@@ -35,11 +37,11 @@ const NhanVienSchema = new mongoose.Schema(
       type: String,
       required: true,
       unique: true,
-      length: 12,
       pattern: "[0-9]",
     },
     Email: {
       type: String,
+      required: true,
     },
     MatKhau: {
       type: String,
@@ -48,6 +50,8 @@ const NhanVienSchema = new mongoose.Schema(
     },
     Quyen: {
       type: String,
+      required: true,
+      default: "NhanVien"
     },
   },
   { timestamps: true }

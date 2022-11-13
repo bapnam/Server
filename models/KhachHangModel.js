@@ -5,57 +5,48 @@ const KhachHangSchema = new mongoose.Schema(
   {
     MaKH: {
       type: String,
+      required: true,
+      unique: true,
     },
     HoTen: {
       type: String,
-      // required: true,
+      required: true,
     },
     NgaySinh: {
       type: String,
     },
     SDT: {
       type: String,
-      // required: true,
-      // unique: true,
-      // length: 10,
+      required: true,
+      unique: true,
+      length: 10,
     },
     DiaChi: [
       {
-        TenDiaChi: { type: String, default: "Dia Chi 1" },
+        TenDiaChi: { type: String, default: "Địa Chỉ 1" },
         TinhTP: { type: String },
         QuanHuyen: { type: String },
         XaPhuong: { type: String },
+        ChiTiet: { type: String },
       },
     ],
     GioiTinh: {
       type: String,
       // required: true,
     },
-    CMND: {
-      type: String,
-      // required: true,
-      // unique: true,
-      // // length: 12,
-      // pattern: "[0-9]",
-    },
     Email: {
       type: String,
+      required: true,
     },
     MatKhau: {
       type: String,
-      // required: true,
-      // minlength: 6,
+      required: true,
+      minlength: 6,
     },
     TichDiem: {
       type: Number,
-      // default: 0
+      default: 0,
     },
-    SoThich: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "LoaiSach",
-      },
-    ],
   },
   { timestamps: true }
 );

@@ -12,6 +12,7 @@ const NXBSchema = new mongoose.Schema(
         TinhTP: { type: String },
         QuanHuyen: { type: String },
         XaPhuong: { type: String },
+        ChiTiet: {type: String}
       },
     ],
     Email: {

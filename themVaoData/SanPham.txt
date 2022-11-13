@@ -1,0 +1,15 @@
+{
+    "TenSanPham": "Số Đỏ",
+    "NXB": "636cd3a7975be71aecc847f1",
+    "TacGia": "636cd657975be71aecc84807",
+    "SoLuong": 40,
+    "LoaiSach": [
+        "636cd57e975be71aecc847f7"
+    ],
+    "Gia": 100.000,
+    "HinhAnh": "",
+    "MoTa": "Số Đỏ là một trong ba tác phẩm văn học làm nên tiếng tăm của Vũ Trọng Phụng. Cuốn tiểu thuyết có 20 chương, mỗi chương là một lời mỉa mai sâu sắc, châm biếm của tác giả với cái thói đời thuở ấy. Tiêu biểu nhất có thể kể đến nhân vật Xuân Tóc Đỏ, tên lang thang đầu đường xó chợ có mái tóc đỏ, đỏ như cái mệnh của hắn, từ một tên ba lăng nhăng biết đọc tên thuốc lậu mà lên đời thành danh đốc tờ, rồi được làm con rể cụ Hồng chỉ nhờ “số đỏ”."
+}
+
+
+

@@ -9,7 +9,7 @@ router.post("/add", nhanVienController.addNhanVien);
 router.post("/dangnhap", nhanVienController.dangnhap);
 
 // GET ALL NHAN VIEN
-router.get("/allnhanvien", nhanVienController.getAllNhanVien);
+router.get("/getallnhanvien", nhanVienController.getAllNhanVien);
 
 // DELETE NHAN VIEN
 router.delete("/deletenhanvien/:CMND", nhanVienController.deleteNhanVien);
