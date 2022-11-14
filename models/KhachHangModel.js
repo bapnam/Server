@@ -6,7 +6,7 @@ const KhachHangSchema = new mongoose.Schema(
     MaKH: {
       type: String,
       required: true,
-      unique: true,
+      unique: [true, 'Trùng mã Khách Hàng'],
     },
     HoTen: {
       type: String,
