@@ -12,6 +12,17 @@ const nxbController = {
       res.status(500).json("Loi them NXB", error);
     }
   },
+
+  // get All
+  getAllNXB: async (req, res) => {
+    try {
+      const dsNXB = await NXBModel.find();
+      res.status(200).json(dsNXB);
+    } catch (error) {
+      console.log(error);
+      res.status(500).json("Loi getAllNXB", error);
+    }
+  },
 };
 
 module.exports = nxbController;

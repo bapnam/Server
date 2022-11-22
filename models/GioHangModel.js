@@ -1,13 +1,16 @@
 const mongoose = require("mongoose");
 
 const gioHang = new mongoose.Schema({
-  KhachHang_ID: {
-    type: String,
+  KhachHangID: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "KhachHang",
+    required: true,
   },
   SanPham: [
     {
       SanPham_ID: {
-        type: String,
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "SanPham",
       },
       SoLuong: {
         type: Number,

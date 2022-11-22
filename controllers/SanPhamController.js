@@ -2,12 +2,33 @@ const sanPhamModel = require("../models/SanPhamModel");
 const tacGiaModel = require("../models/TacGiaModel");
 const nxbModel = require("../models/NhaXuatBanModel");
 
+// SET STORAGE
+// var storage = multer.diskStorage({
+//   destination: function (req, file, cb) {
+//     cb(null, "../publics/images");
+//   },
+//   filename: function (req, file, cb) {
+//     cb(null, file.fieldname + "-" + Date.now());
+//   },
+// });
+
+// var upload = multer({ storage: storage });
+
+// if (req.body.TacGia) {
+//   const tg = await tacGiaModel.findById(req.body.TacGia);
+//   await tg.updateOne({ $push: { TacPham: newSP._id } }); // push vi la array
+// }
+// if (req.body.NXB) {
+//   const nxb = await nxbModel.findById(req.body.NXB);
+//   await nxb.updateOne({ $push: { SanPham: newSP._id } });
+// }
 const sanPhamController = {
   // ADD San Pham
   addSanPham: async (req, res) => {
     try {
-      
-
+      const file = req.file;
+      // res.send(file);
+      console.log("HAHA: ", file);
       const book = {
         TenSanPham: req.body.TenSanPham,
         NXB: req.body.NXB,
@@ -20,17 +41,8 @@ const sanPhamController = {
       };
       const newSP = new sanPhamModel(book);
       const save = await newSP.save();
-
-      // if (req.body.TacGia) {
-      //   const tg = await tacGiaModel.findById(req.body.TacGia);
-      //   await tg.updateOne({ $push: { TacPham: newSP._id } }); // push vi la array
-      // }
-      // if (req.body.NXB) {
-      //   const nxb = await nxbModel.findById(req.body.NXB);
-      //   await nxb.updateOne({ $push: { SanPham: newSP._id } });
-      // }
-
       res.status(200).json(save);
+      
     } catch (error) {
       console.log(error);
       res.status(500).json("CO LOI KHI THEM: ", error);
@@ -64,10 +76,10 @@ const sanPhamController = {
     try {
       const books = await sanPhamModel
         .find()
-        .populate("TacGia", ['TenTacGia'])
-        .populate("NXB", ['TenNXB'])
-        .populate("LoaiSach", ['TenLoaiSach']);
-      
+        .populate("TacGia", ["TenTacGia"])
+        .populate("NXB", ["TenNXB"])
+        .populate("LoaiSach", ["TenLoaiSach"]);
+
       res.status(200).json(books);
     } catch (error) {
       console.log(error);

@@ -28,7 +28,7 @@ app.use(express.json());
 app.use(cors());
 app.use(morgan("common"));
 
-app.use('/static', express.static('static'))
+app.use('/publics', express.static('publics'))
 
 
 //LOG--- CONNECT MONGOO DB

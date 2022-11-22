@@ -25,27 +25,35 @@ const khachHangController = {
   // get KH or Dang nhap
   getAKhachHang: async (req, res) => {
     try {
-
       const kh = await KhachHangModel.findOne({ SDT: req.body.SDT });
+      const data = {
+        stateLogin: "",
+        idUser: "kh._id",
+        nameUser: "kh.HoTen",
+      };
 
       if (!kh) {
-        return res.status(404).json("NoUser"); //Khong tim thay nguoi dung!!!
+        data.stateLogin = "NoUser";
+        return res.status(404).json(data); //Khong tim thay nguoi dung!!!
       }
 
       const pwd = await bcrypt.compare(req.body.MatKhau, kh.MatKhau);
       if (!pwd) {
-        return res.status(404).json("NoPassword"); //Sai mat khau!!!
+        data.stateLogin = "NoPassword";
+        return res.status(404).json(data); //Sai mat khau!!!
       }
 
       if (kh && pwd) {
-        return res.status(200).json("Yes"); // Cho phep dang nhap
+        data.stateLogin = "Yes";
+        data.idUser = kh._id;
+        data.nameUser = kh.HoTen;
+        return res.status(200).json(data); // Cho phep dang nhap
       }
-
     } catch (error) {
       console.log(error);
       res.status(500).json(error.message);
     }
-  }
+  },
 };
 
 module.exports = khachHangController;

@@ -1,16 +1,16 @@
-const mongooes = require("mongoose");
+const mongoose = require("mongoose");
 
-const hoaDonSchema = new mongooes.Schema(
+const hoaDonSchema = new mongoose.Schema(
   {
     SoHoaDon: {
       type: Number,
     },
     NhanVien_ID: {
-      type: mongooes.Schema.Types.ObjectId,
+      type: mongoose.Schema.Types.ObjectId,
       ref: "NhanVien",
     },
     KhachHang_ID: {
-      type: mongooes.Schema.Types.ObjectId,
+      type: mongoose.Schema.Types.ObjectId,
       ref: "KhachHang",
     },
     HoTen: {
@@ -29,7 +29,7 @@ const hoaDonSchema = new mongooes.Schema(
     SanPham: [
       {
         SanPham_ID: {
-          type: mongooes.Schema.Types.ObjectId,
+          type: mongoose.Schema.Types.ObjectId,
           ref: "SanPham",
         },
         TenSanPham: {
@@ -44,7 +44,7 @@ const hoaDonSchema = new mongooes.Schema(
       },
     ],
     PhuongThuc_TT: {
-      type: mongooes.Schema.Types.ObjectId,
+      type: mongoose.Schema.Types.ObjectId,
       ref: "PhuongThucThanhToan",
     },
     TongTien: {
@@ -54,6 +54,6 @@ const hoaDonSchema = new mongooes.Schema(
   { timestamps: true }
 );
 
-let HoaDon = mongooes.model("HoaDon", hoaDonSchema);
+let HoaDon = mongoose.model("HoaDon", hoaDonSchema);
 
 module.exports = HoaDon;

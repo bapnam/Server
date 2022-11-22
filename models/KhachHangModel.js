@@ -32,7 +32,6 @@ const KhachHangSchema = new mongoose.Schema(
     ],
     GioiTinh: {
       type: String,
-      // required: true,
     },
     Email: {
       type: String,
