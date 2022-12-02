@@ -34,13 +34,13 @@ const khachHangController = {
 
       if (!kh) {
         data.stateLogin = "NoUser";
-        return res.status(404).json(data); //Khong tim thay nguoi dung!!!
+        return res.status(200).json(data); //Khong tim thay nguoi dung!!!
       }
 
       const pwd = await bcrypt.compare(req.body.MatKhau, kh.MatKhau);
       if (!pwd) {
         data.stateLogin = "NoPassword";
-        return res.status(404).json(data); //Sai mat khau!!!
+        return res.status(200).json(data); //Sai mat khau!!!
       }
 
       if (kh && pwd) {

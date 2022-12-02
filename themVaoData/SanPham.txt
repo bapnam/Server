@@ -10,6 +10,13 @@
     "HinhAnh": "",
     "MoTa": "Số Đỏ là một trong ba tác phẩm văn học làm nên tiếng tăm của Vũ Trọng Phụng. Cuốn tiểu thuyết có 20 chương, mỗi chương là một lời mỉa mai sâu sắc, châm biếm của tác giả với cái thói đời thuở ấy. Tiêu biểu nhất có thể kể đến nhân vật Xuân Tóc Đỏ, tên lang thang đầu đường xó chợ có mái tóc đỏ, đỏ như cái mệnh của hắn, từ một tên ba lăng nhăng biết đọc tên thuốc lậu mà lên đời thành danh đốc tờ, rồi được làm con rể cụ Hồng chỉ nhờ “số đỏ”."
 }
+{
+nguyeenx du
+Thanh Hiên thi tập là tập thơ chữ Hán đầu tiên của Nguyễn Du. Tập thơ này Nguyễn Du làm trong thời kỳ còn hàn vi và có thể phân chia ra làm ba giai đoạn:
+1. Mười năm gió bụi (1786-1795) là thời gian ông lẩn trốn ở Quỳnh Côi.
+2. Dưới chân núi Hồng (1796-1802), về ẩn ở quê nhà.
+3. Làm quan ở Bắc Hà (1802-1804).
+}
 
 
 

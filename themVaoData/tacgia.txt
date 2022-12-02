@@ -1,0 +1,54 @@
+{
+    "TenTacGia": "Vũ Trọng Phụng",
+    "NamSinh": "1912",
+    "NamMat": "1939",
+    "NoiSinh": "huyện Yên Mỹ, tỉnh Hưng Yên",
+    "ButDanh": "Thiên Hư",
+    "TacPham": []
+}
+{
+    "TenTacGia": "Nguyễn Du",
+    "NamSinh": "1766",
+    "NamMat": "1820",
+    "NoiSinh": "làng Tiên Đình, tỉnh Hà Tĩnh",
+    "ButDanh": "Tố Như",
+    "TacPham": []
+}
+{
+    "TenTacGia": "Ngô Tất Tố",
+    "NamSinh": "1893",
+    "NamMat": "1954",
+    "NoiSinh": "huyện Đông Anh, Hà Nội",
+    "ButDanh": "Ngô Tất Tố",
+    "TacPham": []
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

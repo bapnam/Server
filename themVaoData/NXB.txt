@@ -1,0 +1,42 @@
+{
+    "TenNXB": "Nhà xuất bản Văn học",
+    "DiaChi": [
+        {
+            "TenDiaChi": "Trụ sở chính",
+            "TinhTP": "Hà Nội",
+            "QuanHuyen": "Ba Đình",
+            "XaPhuong": "Trúc Bạch",
+            "ChiTiet": "18 Nguyễn Trường Tộ, phường Trúc Bạch, quận Ba Đình, thành phố Hà Nội"
+        },
+        {
+            "TenDiaChi": "Chi nhánh Hồ Chí Minh",
+            "TinhTP": "Thành phố Hồ Chí Minh",
+            "QuanHuyen": "Quận 3",
+            "XaPhuong": "Phường 7",
+            "ChiTiet": "290/20 Nam Kỳ Khởi Nghĩa - Quận 3"
+        }
+    ],
+    "Email": "info@nxbvanhoc.com.vn",
+    "SDT": "0243. 7161518  - 0243. 7163409"
+}
+{
+    "TenNXB": "Nhà xuất bản Chính trị Quốc gia",
+    "DiaChi": [
+        {
+            "TenDiaChi": "Trụ sở 1",
+            "TinhTP": "Hà Nội",
+            "QuanHuyen": "Hoàn Kiếm",
+            "XaPhuong": "Quang Trung",
+            "ChiTiet": "24 Quang Trung, Hoàn Kiếm, Hà Nội"
+        },
+        {
+            "TenDiaChi": "Trụ sở 2",
+            "TinhTP": "Hà Nội",
+            "QuanHuyen": "Hoàn Kiếm",
+            "XaPhuong": "Cầu Giấy",
+            "ChiTiet": "6/86 Duy Tân, Cầu Giấy, Hoàn Kiếm, Hà Nội"
+        }
+    ],
+    "Email": "suthat@nxbctqg.vn",
+    "SDT": "080.49221"
+}
